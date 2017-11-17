@@ -11,6 +11,7 @@ Gem::Specification.new do |s|
   s.email       = 'jared@haiq.us'
   s.files       = Dir['lib/**/*', 'README*', 'CHANGELOG*', 'LICENSE']
   s.homepage    = 'https://github.com/Jared-Prime/mmonad'
+  s.license     = 'AGPL-3.0'
 
   s.add_development_dependency 'bundler-audit'
   s.add_development_dependency 'pry-byebug'

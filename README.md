@@ -1,0 +1,2 @@
+[![Gem Version](https://badge.fury.io/rb/mmonad.svg)](https://badge.fury.io/rb/mmonad)
+[![CircleCI](https://circleci.com/gh/Jared-Prime/mmonad.svg?style=svg)](https://circleci.com/gh/Jared-Prime/mmonad)
