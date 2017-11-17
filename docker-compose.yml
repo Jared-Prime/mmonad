@@ -1,0 +1,10 @@
+version: '3'
+services:
+  agent:
+    image: jprime/mmonad
+    build:
+      context: .
+    command: echo "I am an agent"
+  client:
+    image: jprime/mmonad
+    command: echo "I am a client"
