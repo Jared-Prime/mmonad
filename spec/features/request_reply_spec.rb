@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-RSpec.describe 'synchronous request reply' do
+RSpec.describe 'synchronous request reply', feature: true do
   subject do
     class TestAgent
       extend MMonad::Agent

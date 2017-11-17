@@ -13,7 +13,7 @@ jobs:
           command: bundle exec rubocop
       - run:
           name: Unit Tests
-          command: bundle exec rspec
+          command: bundle exec rspec --tag ~feature
       - run:
           name: Feature Tests
           command: bundle exec rspec --tag feature
