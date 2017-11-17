@@ -1,0 +1,19 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: jprime/mmonad:latest
+    steps:
+      - checkout
+      - run:
+          name: Bundler
+          command: bundle install
+      - run:
+          name: Rubocop
+          command: bundle exec rubocop
+      - run:
+          name: Unit Tests
+          command: bundle exec rspec
+      - run:
+          name: Feature Tests
+          command: bundle exec rspec --tag feature
