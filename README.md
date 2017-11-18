@@ -46,6 +46,8 @@ DSL for _data-passing_ nodes:
   - `.timeout` specifies how long to wait on a socket for a response
   - `.message` accepts a Hash to pass along the 0MQ socket as data
 
+The structure of the `Mmonad` DSL has been designed such that projects using the `gem` need only focus on their specific business logic, leaving all the generic 0MQ pattern implementation to this project. The examples below demonstrate how projects using `mmonad` focus on their own business logic.
+
 ## Examples
 
 Each example below has a corresponding feature test. See the feature test directory for basic testing strategies. See the `MMonad::Pattern::LIBRARY` for currently supported patterns.
@@ -62,11 +64,11 @@ class MyAgent
   process do |message|
     puts "got a message: #{message}"
 
-    { my_reply: "Thank You!" }
+    { business_reply: "Business is great!" }
   end
 
   exceptions do |exception|
-    { my_reply: "This is not nice: #{exception}" }
+    { business_reply: "This is not good for business: #{exception}" }
   end
 end
 
@@ -85,8 +87,8 @@ end
 
 Thread.new { MyAgent.run }
 
-MyClient << { my_request: "Here's my message" }
+MyClient << { customer_message: "How is business?" }
 
-#=> got a message: { "my_request" => "Here's a gift" }
-#=> got a response: { "my_reply" => "Thank You!" }
+#=> got a message: { "customer_message" => "How is business?" }
+#=> got a response: { "business_reply" => "Business is great!" }
 ```
