@@ -13,6 +13,8 @@ Gem::Specification.new do |s|
   s.homepage    = 'https://github.com/Jared-Prime/mmonad'
   s.license     = 'AGPL-3.0'
 
+  s.require_paths = ['lib', 'lib/m_monad']
+
   s.add_development_dependency 'bundler-audit'
   s.add_development_dependency 'pry-byebug'
   s.add_development_dependency 'rspec'

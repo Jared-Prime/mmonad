@@ -3,14 +3,14 @@
 module MMonad
   MAJOR = 0
   MINOR = 0
-  PATCH = 0
-  RELEASE = 'pre'
+  PATCH = 1
+  RELEASE = 'p2'
 
   VERSION = [
     MAJOR,
     MINOR,
     PATCH,
-    RELEASE
+    RELEASE,
   ].join('.')
             .freeze
 end
