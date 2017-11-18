@@ -9,16 +9,16 @@ Messaging Monad, backed by 0MQ
 
 `MMonad` provides a DSL for sending and receiving messages through 0MQ sockets.
 
-## Requirements
+## Installation Requirements
 
 1. 0MQ
-  - `libzmq` core library
-  - `czmq` C bindings
+  - `libzmq` ZeroMQ core engine in C++, implements ZMTP/3.0 https://github.com/zeromq/libzmq
+  - `czmq` High-level C binding for ØMQ https://github.com/zeromq/czmq
 2. Ruby
-  - `2.4.2` minimum supported
-3. Docker (recommended)
+  - `2.4.2` minimum supported. [`rbenv` is the recommended Ruby install tool](https://github.com/rbenv/rbenv#installation)
+3. Docker https://store.docker.com/search?offering=community&type=edition (optional, but highly recommended)
 
-Users with a Docker installation will find the first two requirements met by using the published image layer.
+Users with a Docker installation will find the first two requirements met by using the published image layer at https://hub.docker.com/r/jprime/mmonad
 
 ## Contributions & Licensing
 
@@ -52,7 +52,7 @@ Each example below has a corresponding feature test. See the feature test direct
 
 ### Synchronous Request / Reply
 
-```
+```ruby
 class MyAgent
   extend MMonad::Agent
 
