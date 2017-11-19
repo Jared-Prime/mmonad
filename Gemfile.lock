@@ -1,9 +1,9 @@
 PATH
   remote: .
   specs:
-    mmonad (0.0.0.pre)
-      cztop
-      require_all
+    mmonad (0.0.2)
+      cztop (~> 0.11)
+      require_all (~> 1.4)
 
 GEM
   remote: https://rubygems.org/
@@ -72,14 +72,14 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  bundler-audit
+  bundler-audit (~> 0.6)
   mmonad!
-  pry-byebug
+  pry-byebug (~> 3.5)
   rake
-  rspec
-  rubocop
-  rubocop-rspec
-  simplecov
+  rspec (~> 3.7)
+  rubocop (~> 0.51)
+  rubocop-rspec (~> 1.20)
+  simplecov (~> 0.15)
 
 BUNDLED WITH
    1.16.0

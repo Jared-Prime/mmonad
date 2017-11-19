@@ -1,6 +1,7 @@
 #!/usr/bin/env ruby
+# frozen_string_literal: true
 
-require 'mmonad'
+require 'm_monad'
 
 class MyAgent
   extend MMonad::Agent
@@ -11,7 +12,7 @@ class MyAgent
   process do |message|
     puts "got a message: #{message}"
 
-    { business_reply: "Business is great!" }
+    { business_reply: 'Business is great!' }
   end
 
   exceptions do |exception|
@@ -34,4 +35,4 @@ end
 
 Thread.new { MyAgent.run }
 
-MyClient << { customer_message: "How is business?" }
+MyClient << { customer_message: 'How is business?' }

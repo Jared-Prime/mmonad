@@ -12,7 +12,7 @@ namespace :docker do
   end
 
   desc 'run tests on the development container image'
-  task :test => :build do
+  task test: :build do
     Kernel.exec('docker run -it jprime/mmonad:development bundle exec rspec')
   end
 
