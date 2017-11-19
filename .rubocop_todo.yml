@@ -28,7 +28,7 @@ Metrics/BlockLength:
 Metrics/LineLength:
   Max: 107
 
-# Offense count: 5
+# Offense count: 6
 Style/Documentation:
   Exclude:
     - 'spec/**/*'
@@ -37,3 +37,4 @@ Style/Documentation:
     - 'lib/m_monad/agent.rb'
     - 'lib/m_monad/client.rb'
     - 'lib/m_monad/pattern.rb'
+    - 'docker/examples/request_reply/example.rb'
