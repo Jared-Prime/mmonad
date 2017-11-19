@@ -1,10 +1,21 @@
 version: '3'
 services:
-  agent:
-    image: jprime/mmonad
+  base:
+    image: jprime/mmonad:base
     build:
       context: .
-    command: echo "I am an agent"
-  client:
-    image: jprime/mmonad
-    command: echo "I am a client"
+      dockerfile: docker/base/Dockerfile
+  development:
+    image: jprime/mmonad:development
+    build:
+      context: .
+      dockerfile: docker/development/Dockerfile
+    depends_on:
+      - base
+  req_rep:
+    image: jprime/mmonad:example-req-rep
+    build:
+      context: docker/examples
+      dockerfile: request_reply/Dockerfile
+    depends_on:
+      - base

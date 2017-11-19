@@ -18,18 +18,9 @@ RUN apt-get update \
 
 COPY docker-init.d /root/docker-init.d
 
-RUN mkdir -p /usr/local/mmonad
+RUN mkdir -p /app
 
-WORKDIR /usr/local/mmonad
-
-COPY Gemfile ./
-COPY Gemfile.lock ./
-COPY mmonad.gemspec ./
-COPY lib/version.rb lib/version.rb
-
-RUN bundle install
-
-COPY . ./
+WORKDIR /app
 
 ENTRYPOINT ["/usr/bin/dumb-init", "--", "/root/docker-init.d/default.sh"]
 

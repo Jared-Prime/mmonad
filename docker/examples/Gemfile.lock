@@ -1,0 +1,21 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    czmq-ffi-gen (0.13.0)
+      ffi (~> 1.9.10)
+    cztop (0.11.4)
+      czmq-ffi-gen (~> 0.13.0)
+    ffi (1.9.18)
+    mmonad (0.0.2)
+      cztop (~> 0.11)
+      require_all (~> 1.4)
+    require_all (1.4.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  mmonad (>= 0.0.2)
+
+BUNDLED WITH
+   1.16.0

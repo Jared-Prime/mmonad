@@ -1,9 +1,9 @@
 # frozen_string_literal: true
 
+require 'json'
 require 'require_all'
-
-require_all './lib/m_monad'
-require_all './lib/version'
+require 'timeout'
+require_all File.join(File.dirname(__FILE__))
 
 module MMonad
 end

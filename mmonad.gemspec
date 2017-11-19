@@ -13,13 +13,15 @@ Gem::Specification.new do |s|
   s.homepage    = 'https://github.com/Jared-Prime/mmonad'
   s.license     = 'AGPL-3.0'
 
-  s.add_development_dependency 'bundler-audit'
-  s.add_development_dependency 'pry-byebug'
-  s.add_development_dependency 'rspec'
-  s.add_development_dependency 'rubocop'
-  s.add_development_dependency 'rubocop-rspec'
-  s.add_development_dependency 'simplecov'
+  s.require_paths = ['lib', 'lib/m_monad']
 
-  s.add_dependency 'cztop'
-  s.add_dependency 'require_all'
+  s.add_development_dependency 'bundler-audit', '~> 0.6'
+  s.add_development_dependency 'pry-byebug', '~> 3.5'
+  s.add_development_dependency 'rspec', '~> 3.7'
+  s.add_development_dependency 'rubocop', '~> 0.51'
+  s.add_development_dependency 'rubocop-rspec', '~> 1.20'
+  s.add_development_dependency 'simplecov', '~> 0.15'
+
+  s.add_dependency 'cztop', '~> 0.11'
+  s.add_dependency 'require_all', '~> 1.4'
 end

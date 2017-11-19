@@ -1,3 +1,6 @@
 .bundle
 vendor/cache
 coverage
+docker/examples/vendor/
+.rake_tasks
+*.gem
