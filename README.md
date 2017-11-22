@@ -22,7 +22,7 @@ Users with a Docker installation will find the first two requirements met by usi
 
 ## Contributions & Licensing
 
-User contributions are welcome and subject to the [contribution](https://github.com/Jared-Prime/mmonad/blob/master/.github/CONTRIBUTING) and [code of conduct](https://github.com/Jared-Prime/mmonad/blob/master/.github/CODE_OF_CONDUCT) guideliness. All code made available under [AGPL-3.0](https://github.com/Jared-Prime/mmonad/blob/master/LICENSE).
+User contributions are welcome and subject to the [contribution](https://github.com/Jared-Prime/mmonad/blob/master/.github/CONTRIBUTING.md) and [code of conduct](https://github.com/Jared-Prime/mmonad/blob/master/.github/CODE_OF_CONDUCT.md) guideliness. All code made available under [AGPL-3.0](https://github.com/Jared-Prime/mmonad/blob/master/LICENSE).
 
 ## Project Specifications
 
